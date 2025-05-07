@@ -7,7 +7,7 @@ This project was developed as part of the Cognitive Data Science. It explores th
 
 "I want to make multiple prompts to an LLM with the same phrase in English and Italian, and I want to use a JSON file. I need 70 phrases, each needs to ask for opinions. Can you make that JSON for me, with all the 70 phrases?"
 
-Methodology
+## Methodology
 
 Data Collection: Responses to prompts were collected in both English and Italian, resulting in a dataset of 550 samples.
 
@@ -17,7 +17,8 @@ Modeling: The Mistral LLM was employed to process and generate responses based o
 
 Comparison: Emotional scores for the eight emotions were compared between the two languages to identify possible patterns and discrepancies.
 
-Results and Insights
+
+## Results and Insights
 
 The analysis revealed notable differences in emotional intensity and expression across given two languages. Key findings include:
 
@@ -29,7 +30,8 @@ Sadness and Disgust: Minor cross-linguistic differences.
 
 These findings provide valuable insights into the dynamics of multilingual emotional expression, contributing to the fields of multilingual communication and affective computing.
 
-Technologies Used
+
+##Technologies Used
 
 Python
 
@@ -42,7 +44,7 @@ Data Analysis Libraries (e.g., pandas, numpy)
 Visualization Libraries (e.g., matplotlib, seaborn)
 
 
-Setup and Installation
+## Setup and Installation
 
 Clone the repository:
 
@@ -56,7 +58,8 @@ Install required packages:
 
 pip install -r requirements.txt
 
-Usage
+
+## Usage
 
 To preprocess the data and generate emotion scores, run:
 
@@ -66,7 +69,8 @@ To run the emotion analysis and comparison script:
 
 python analyze_emotions.py
 
-Future Work and Improvements
+
+## Future Work and Improvements
 
 Expand the dataset to include more languages and samples.
 
@@ -74,7 +78,8 @@ Apply additional emotional analysis tools to validate the findings.
 
 Develop a visualization dashboard for interactive exploration of results.
 
-Contributors
+
+## Contributors
 
 Your Name (@terezasaskova)
 
