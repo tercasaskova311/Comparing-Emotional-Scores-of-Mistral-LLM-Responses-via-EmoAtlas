@@ -3,7 +3,7 @@ A Comparative Analysis of Emotion Scores in English and Italian Using Mistral LL
 
 Project Overview
 
-This project was developed as part of the Cognitive Data Science. It explores the cross-linguistic differences in emotional expression in responses of Mistral LLM between English and Italian by analyzing emotion scores of these responses for eight basic emotions: anger, joy, trust, sadness, disgust, fear, anticipation, and surprise. The dataset comprises 550 samples of responses to various prompts which were generated in both languages based on the following request:
+This project was developed as part of the Cognitive Data Science Hackathon at University of TRento. It explores the cross-linguistic differences in emotional expression in responses of Mistral LLM between English and Italian by analyzing emotion scores of these responses for eight basic emotions: anger, joy, trust, sadness, disgust, fear, anticipation, and surprise. The dataset comprises 550 samples of responses to various prompts which were generated in both languages based on the following request:
 
 "I want to make multiple prompts to an LLM with the same phrase in English and Italian, and I want to use a JSON file. I need 70 phrases, each needs to ask for opinions. Can you make that JSON for me, with all the 70 phrases?"
 
