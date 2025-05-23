@@ -25,6 +25,16 @@ Comparison: Emotional scores for the eight emotions were compared between the tw
 
 The analysis revealed some differences in emotional intensity and expression given two languages. Key findings include:
 
+Emotion	p-value	Significant?
+anger	0.234	No
+joy	0.0029	Yes
+trust	2.08e-13	Yes, extremely significant
+sadness	6.66e-11	Yes
+disgust	1.31e-07	Yes
+fear	0.916	No
+anticipation	0.016	Yes
+surprise	2.25e-06	Yes
+
 Anger: Higher intensity in Italian responses.
 
 Joy and Trust: Stronger expressions in English responses.
