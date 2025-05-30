@@ -11,7 +11,7 @@ A total of 550 samples were generated from prompts formulated in both English an
 
 ### Data Collection
 
-- 70 opinion-seeking prompts were generated in both English and Italian.
+- 550 opinion-seeking prompts were generated in both English and Italian.
 - Each prompt was used to query the Mistral LLM separately in each language.
 - Responses were collected independently, resulting in a bilingual dataset of 550 paired samples.
 
@@ -64,7 +64,7 @@ A total of 550 samples were generated from prompts formulated in both English an
 - The mean absolute error (MAE) between emotion scores in the two languages was 0.9.
 - Trust and anticipation displayed the largest cross-linguistic divergences, as visualized in the heatmap of standardized z-scores (see `heat_maps.png`).
 
-These findings suggest that linguistic structure and cultural norms significantly influence emotional expression. Differences in tokenization and vocabulary efficiency also play a role, especially in language models optimized for specific languages.
+These findings suggest that linguistic structure and cultural norms can influence emotional expression. Differences in tokenization and vocabulary efficiency also play a role, especially in language models optimized for specific languages.
 
 ## Theoretical Context
 
