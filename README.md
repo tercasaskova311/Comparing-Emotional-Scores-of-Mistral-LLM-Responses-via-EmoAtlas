@@ -44,6 +44,10 @@ A total of 550 samples were generated from prompts formulated in both English an
 | Anticipation  | 0.016     | Yes                      |
 | Surprise      | 2.25e-06  | Yes                      |
 
+### Heat Map of Emotion Scores
+![Heat map](https://github.com/tercasaskova311/Comparing-Emotional-Scores-of-Mistral-LLM-Responses-via-EmoAtlas/blob/4e7a71073212105e260bef6a5908982ae16044fb/heat_maps.png)
+
+
 ## Visualizations
 
 ### Principal Component Analysis (PCA)
