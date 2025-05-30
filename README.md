@@ -44,6 +44,15 @@ A total of 550 samples were generated from prompts formulated in both English an
 | Anticipation  | 0.016     | Yes                      |
 | Surprise      | 2.25e-06  | Yes                      |
 
+## Visualizations
+
+### Principal Component Analysis (PCA)
+![PCA plot](https://github.com/tercasaskova311/Comparing-Emotional-Scores-of-Mistral-LLM-Responses-via-EmoAtlas/blob/76b50c3eb49b8d49790f5c8e53f5ee83948a05e3/PCA.png)
+
+### Radar Plot of Emotion Scores
+![Radar plot](https://github.com/tercasaskova311/Comparing-Emotional-Scores-of-Mistral-LLM-Responses-via-EmoAtlas/blob/9e8c902b9f4ab1fd9e6b752d63fdded39d32653b/radarplot.png)
+
+
 ### Key Observations
 
 - Emotional intensity and structure vary significantly across languages.
