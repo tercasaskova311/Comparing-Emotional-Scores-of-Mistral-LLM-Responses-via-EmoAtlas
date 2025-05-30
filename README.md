@@ -43,6 +43,7 @@ Sadness and Disgust: Minor cross-linguistic differences.
 
 These findings provide valuable insights into the dynamics of multilingual emotional expression, contributing to the fields of multilingual communication and affective computing.
 
+https://github.com/tercasaskova311/Comparing-Emotional-Scores-of-Mistral-LLM-Responses-via-EmoAtlas/blob/4da2ad7427f52a24f03fd5a70357c402733cd6bf/heat_maps.png
 
 ## Technologies Used
 
