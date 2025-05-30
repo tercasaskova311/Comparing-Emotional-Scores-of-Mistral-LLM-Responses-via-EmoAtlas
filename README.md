@@ -3,10 +3,9 @@ A Comparative Analysis of Emotion Scores in English and Italian Using Mistral LL
 
 Project Overview
 
-This project was developed as part of the Cognitive Data Science Hackathon at University of Trento. It explores the cross-linguistic differences in emotional expression in responses of Mistral LLM between English and Italian by analyzing emotion scores of these responses for eight basic emotions: anger, joy, trust, sadness, disgust, fear, anticipation, and surprise. The dataset comprises 550 samples of responses to various prompts which were generated in both languages based on the following request:
+This project was developed as part of the Cognitive Data Science Hackathon at University of Trento. It explores the cross-linguistic differences in emotional scores in responses of Mistral LLM between English and Italian by analyzing emotion scores of these responses for eight basic emotions: anger, joy, trust, sadness, disgust, fear, anticipation, and surprise. The dataset comprises 550 samples of responses to various prompts which were generated in both languages based on the following request:
 
 "I want to make multiple prompts to an LLM with the same phrase in English and Italian, and I want to use a JSON file. I need 70 phrases, each needs to ask for opinions. Can you make that JSON for me, with all the 70 phrases?"
-
 
 
 ## Methodology
@@ -25,15 +24,16 @@ Comparison: Emotional scores for the eight emotions were compared between the tw
 
 The analysis revealed some differences in emotional intensity and expression given two languages. Key findings include:
 
-Emotion	p-value	Significant?
-anger	0.234	No
-joy	0.0029	Yes
-trust	2.08e-13	Yes, extremely significant
-sadness	6.66e-11	Yes
-disgust	1.31e-07	Yes
-fear	0.916	No
-anticipation	0.016	Yes
-surprise	2.25e-06	Yes
+Emotion	p-value	Significance?
+
+- anger	0.234	No
+- joy	0.0029	Yes
+- trust	2.08e-13	Yes, extremely significant
+- sadness	6.66e-11	Yes
+- disgust	1.31e-07	Yes
+- fear	0.916	No
+- anticipation	0.016	Yes
+- surprise	2.25e-06	Yes
 
 Anger: Higher intensity in Italian responses.
 
@@ -42,8 +42,6 @@ Joy and Trust: Stronger expressions in English responses.
 Sadness and Disgust: Minor cross-linguistic differences.
 
 These findings provide valuable insights into the dynamics of multilingual emotional expression, contributing to the fields of multilingual communication and affective computing.
-
-![heat_map](https://github.com/user-attachments/assets/9f1caa1b-c3c9-4052-ae09-02f818ffcb31)
 
 
 ## Technologies Used
@@ -75,12 +73,6 @@ Install required packages:
 pip install -r requirements.txt
 
 
-
-## Usage
-
-
-
-
 ## Future Work and Improvements
 
 Expand the dataset to include more languages and samples.
@@ -91,15 +83,10 @@ Develop a visualization dashboard for interactive exploration of results.
 
 
 
-## Contributors
-
-Your Name (@)
-
-Collaborator Name (@collaborator)
 
 Acknowledgments
 
-Cognitive Data Science Hackathon
+Cognitive Data Science Hackathon & Prof. Stella
 
 Mistral LLM
 
