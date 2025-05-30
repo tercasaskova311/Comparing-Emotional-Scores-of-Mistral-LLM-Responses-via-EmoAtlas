@@ -1,96 +1,73 @@
-# Cross-Linguistic Emotional Expression
-A Comparative Analysis of Emotion Scores in English and Italian Using Mistral LLM
+Cross-Linguistic Emotional Expression
 
+A Comparative Analysis of Emotion Scores in English and Italian Using Mistral LLM
 Project Overview
 
-This project was developed as part of the Cognitive Data Science Hackathon at University of Trento. It explores the cross-linguistic differences in emotional scores in responses of Mistral LLM between English and Italian by analyzing emotion scores of these responses for eight basic emotions: anger, joy, trust, sadness, disgust, fear, anticipation, and surprise. The dataset comprises 550 samples of responses to various prompts which were generated in both languages based on the following request:
+This project was developed for the Cognitive Data Science Hackathon at the University of Trento. It investigates cross-linguistic emotional expression in English and Italian by analyzing eight core emotions—anger, joy, trust, sadness, disgust, fear, anticipation, and surprise—as expressed in responses from Mistral LLM.
+We analyze how the same prompts, expressed in both languages, yield different emotional scores when passed through the EmoAtlas emotion analysis model.
 
-"I want to make multiple prompts to an LLM with the same phrase in English and Italian, and I want to use a JSON file. I need 70 phrases, each needs to ask for opinions. Can you make that JSON for me, with all the 70 phrases?"
+Methodology
+
+1. Data Collection
+70 prompts were generated asking for opinions, translated into both English and Italian.
+Each prompt was submitted separately in each language to the Mistral LLM, generating distinct responses.
+The final dataset includes 550 samples, each containing an English and Italian prompt/response pair.
+2. Emotion Analysis
+Responses were scored using EmoAtlas, a tool for extracting standardized z-scores for emotional content.
+3. Modeling
+The Mistral LLM generated responses using identical prompts in English and Italian.
+Responses were processed independently for each language, and emotion scores were extracted.
+4. Statistical Comparison
+Scores were compared emotion-by-emotion between English and Italian.
+Paired t-tests were used to assess whether emotion scores differed significantly between the two languages.
+
+Results and Insights
+
+Key Statistical Results:
+Emotion	p-value	Significant?
+Anger	0.234	No
+Joy	0.0029	✅ Yes
+Trust	2.08e-13	✅✅✅ Extremely significant
+Sadness	6.66e-11	✅ Yes
+Disgust	1.31e-07	✅ Yes
+Fear	0.916	No
+Anticipation	0.016	✅ Yes
+Surprise	2.25e-06	✅ Yes
+🔍 Deeper Findings
+Low cross-linguistic correlation (r ≈ 0.2) and a mean absolute error (MAE) of 0.9_ reveal substantial differences in emotional expression across the two languages.
+A heatmap of standardized z-scores (see heat_maps.png) highlights trust and anticipation as dimensions with the strongest divergences.
+“These findings suggest that linguistic structure and cultural norms play critical roles in shaping how emotions are verbalized.”
+
+Theoretical Insight
+Recent work by Moroni et al. (2025) on Semantic Alignment Vocabulary Adaptation (SAVA) shows how token optimization can significantly impact LLM performance in Italian. Although their method focuses on vocabulary redundancy reduction (25% in Mistral-7B-v0.1), it underscores how finetuning for Italian affects emotion expression, shedding light on why Mistral might produce emotionally divergent content depending on language.
 
 
-## Methodology
-
-Data Collection: Same prompts were collected in both English and Italian with asking separately for response in English and Italian, resulting in different responses, with dataset of 550 samples.
-
-Emotion Analysis: Emotion scores were extracted using EmoAtlas, a tool for vectorization and normalization of emotional content.
-
-Modeling: The Mistral LLM was employed to process and generate responses based on the prompts give by Mistral for opinion needed questions in both languages.
-
-Comparison: Emotional scores for the eight emotions were compared between the two languages to identify possible patterns and discrepancies.
-
-
-
-## Results and Insights
-
-The analysis revealed some differences in emotional intensity and expression given two languages. Key findings include:
-
-Emotion	p-value	Significance?
-
-- anger	0.234	No
-- joy	0.0029	Yes
-- trust	2.08e-13	Yes, extremely significant
-- sadness	6.66e-11	Yes
-- disgust	1.31e-07	Yes
-- fear	0.916	No
-- anticipation	0.016	Yes
-- surprise	2.25e-06	Yes
-
-Anger: Higher intensity in Italian responses.
-
-Joy and Trust: Stronger expressions in English responses.
-
-Sadness and Disgust: Minor cross-linguistic differences.
-
-These findings provide valuable insights into the dynamics of multilingual emotional expression, contributing to the fields of multilingual communication and affective computing.
-
-heat_maps.png
-
-## Technologies Used
+Technologies Used
 
 Python
-
 Mistral LLM
-
-EmoAtlas
-
-Data Analysis Libraries (e.g., pandas, numpy)
-
-Visualization Libraries (e.g., matplotlib, seaborn)
+EmoAtlas (emotion scoring)
 
 
-
-## Setup and Installation
-
-Clone the repository:
-
+# Clone the repository
 git clone https://github.com/tercasaskova311/Comparing-Emotional-Scores-of-Mistral-LLM-Responses-via-EmoAtlas.git
 
-Navigate to the project directory:
-
+# Navigate to the project directory
 cd Crosslinguistics_emotional_expression
 
-Install required packages:
-
+# Install required packages
 pip install -r requirements.txt
 
+Future Work and Improvements
 
-## Future Work and Improvements
-
-Expand the dataset to include more languages and samples.
-
-Apply additional emotional analysis tools to validate the findings.
-
-Develop a visualization dashboard for interactive exploration of results.
-
-
+Expand analysis to more languages and cultural contexts.
+Integrate additional emotion classifiers to validate results.
+Develop an interactive dashboard to visualize and compare responses and scores in real time.
 
 
 Acknowledgments
 
-Cognitive Data Science Hackathon & Prof. Stella
-
-Mistral LLM
-
-EmoAtlas
-
-
+University of Trento – Cognitive Data Science Hackathon
+Prof. Stella
+Mistral LLM – Open LLM used for response generation
+EmoAtlas – Emotion vector scoring
